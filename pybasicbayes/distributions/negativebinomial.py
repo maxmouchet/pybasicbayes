@@ -11,18 +11,13 @@ import numpy as np
 from numpy import newaxis as na
 import scipy.special as special
 from scipy.special import logsumexp
-from warnings import warn
 
 from pybasicbayes.abstractions import Distribution, GibbsSampling, \
     MeanField, MeanFieldSVI, MaxLikelihood
 from pybasicbayes.util.stats import getdatasize, flattendata, \
     sample_discrete_from_log, sample_discrete, atleast_2d
 
-try:
-    from pybasicbayes.util.cstats import sample_crp_tablecounts
-except ImportError:
-    warn('using slow sample_crp_tablecounts')
-    from pybasicbayes.util.stats import sample_crp_tablecounts
+from pybasicbayes.util.cstats import sample_crp_tablecounts
 
 
 class _NegativeBinomialBase(Distribution):

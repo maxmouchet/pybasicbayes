@@ -13,12 +13,7 @@ from pybasicbayes.abstractions import \
     GibbsSampling, MeanField, MeanFieldSVI, MaxLikelihood, MAP
 
 from pybasicbayes.util.stats import sample_discrete
-
-try:
-    from pybasicbayes.util.cstats import sample_crp_tablecounts
-except ImportError:
-    warn('using slow sample_crp_tablecounts')
-    from pybasicbayes.util.stats import sample_crp_tablecounts
+from pybasicbayes.util.cstats import sample_crp_tablecounts
 
 
 class Categorical(GibbsSampling, MeanField, MeanFieldSVI, MaxLikelihood, MAP):
