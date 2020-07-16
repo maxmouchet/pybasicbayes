@@ -34,7 +34,7 @@ setup(
         "mean field",
         "vb",
     ],
-    install_requires=["numpy", "scipy", "matplotlib", "nose"],
+    install_requires=["numpy", "scipy", "matplotlib"],
     ext_modules=cythonize(extensions),
     classifiers=[
         "Intended Audience :: Science/Research",
