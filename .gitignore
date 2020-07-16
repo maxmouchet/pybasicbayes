@@ -3,3 +3,4 @@
 /tags
 *.egg-info/
 build/
+dist/
