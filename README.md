@@ -1,5 +1,10 @@
+# pybasicbayes
+
 [![CI](https://github.com/maxmouchet/pybasicbayes/workflows/CI/badge.svg)](https://github.com/maxmouchet/pybasicbayes/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/maxmouchet/pybasicbayes/branch/master/graph/badge.svg)](https://codecov.io/gh/maxmouchet/pybasicbayes)
+
+**This is a Python 3.6+ fork of [mattjj/pybasicbayes](https://github.com/mattjj/pybasicbayes). It drops support for Python 2.**  
+**See also [maxmouchet/pyhsmm](https://github.com/maxmouchet/pyhsmm).**
 
 This library provides objects that model probability distributions and the
 related operations that are common in generative Bayesian modeling and Bayesian
